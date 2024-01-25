@@ -1,26 +1,28 @@
-
-body{
-    display: block;
-    background-color: #EEBA2B;
+.features-container {
+    background-color: #eeba2b;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    margin: 0;
     height: 100vh;
-}
-.h1-features{
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .h1-features {
     font-size: 100px;
     text-align: center;
-    vertical-align: middle;
     margin: 0;
-}
-.features-description{
+  }
+  
+  .features-description {
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 18.5px;
-    font-weight:300;
+    font-weight: 300;
     text-align: center;
-}
-.features-btn{
-  text-align: center;
-}
+  }
+  
+  .features-btn {
+    text-align: center;
+  }
+  

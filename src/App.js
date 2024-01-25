@@ -8,6 +8,7 @@ import Features from "./pages/Features/Features";
 import Support from "./pages/Support/Support";
 import Blogs from "./pages/Blogs/Blogs";
 import Services from "./pages/Services/Services";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
@@ -16,16 +17,19 @@ function App() {
         <Router>
           <Switch>
             <Route path="/features" exact>
-              <Features/>
+              <Features />
             </Route>
             <Route path="/support" exact>
-            <Support/>
+              <Support />
             </Route>
             <Route path="/blogs" exact>
-            <Blogs/>
+              <Blogs />
             </Route>
             <Route path="/services" exact>
-            <Services/>
+              <Services />
+            </Route>
+            <Route path="/login" exact>
+              <Login />
             </Route>
 
             <Redirect to="/features" />
