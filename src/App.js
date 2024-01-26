@@ -9,6 +9,7 @@ import Support from "./pages/Support/Support";
 import Blogs from "./pages/Blogs/Blogs";
 import Services from "./pages/Services/Services";
 import Login from "./pages/Login/Login";
+import Pricing from "./pages/Pricing/Pricing";
 
 function App() {
   return (
@@ -31,7 +32,10 @@ function App() {
             <Route path="/login" exact>
               <Login />
             </Route>
-
+            <Route path="/pricing" exact>
+              <Pricing />
+            </Route>
+            
             <Redirect to="/features" />
           </Switch>
         </Router>
