@@ -1,4 +1,7 @@
-/* Pricing.css */
+.price-page-container{
+    /* margin-top: 1.5rem; */
+    padding-top: 1rem;
+}
 .price-page-upper-section {
     background-color: #eeba2b;
     height: 50vh;

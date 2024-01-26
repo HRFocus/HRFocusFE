@@ -2,9 +2,10 @@
     background-color: #eeba2b;
     display: flex;
     justify-content: space-between; 
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: auto;
+    margin-top:0rem ;
   }
   
   .page-links ul {
