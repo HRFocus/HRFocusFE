@@ -10,12 +10,16 @@ import Blogs from "./pages/Blogs/Blogs";
 import Services from "./pages/Services/Services";
 import Login from "./pages/Login/Login";
 import Pricing from "./pages/Pricing/Pricing";
+// import MainNavigation from "./shared/Navigation/MainNavigation";
+import SignUp from "./pages/SignUp/SignUp";
+import Navbar from "./shared/Navigation/Navbar";
 
 function App() {
   return (
     <div className="App">
       <main>
         <Router>
+        <Navbar/>
           <Switch>
             <Route path="/features" exact>
               <Features />
@@ -35,7 +39,9 @@ function App() {
             <Route path="/pricing" exact>
               <Pricing />
             </Route>
-            
+            <Route path="/new" exact>
+              <SignUp />
+            </Route>
             <Redirect to="/features" />
           </Switch>
         </Router>

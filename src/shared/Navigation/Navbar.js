@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 import { NavLink } from "react-router-dom";
-import "./NavLinks.css"
-const NavLinks = () => {
+import "./Navbar.css"
+const Navbar = () => {
   return (
     <div className="nav-links-container">
     <div className="logo">
@@ -16,7 +16,7 @@ const NavLinks = () => {
           </li>
           <li>
             <NavLink to="/pricing" exact>
-              Prices
+              Pricing
             </NavLink>
           </li>
           <li>
@@ -32,11 +32,6 @@ const NavLinks = () => {
           <li>
             <NavLink to="/services" exact>
               Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Support" exact>
-              Support
             </NavLink>
           </li>
         </ul>
@@ -56,7 +51,7 @@ const NavLinks = () => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NavLinks;
+export default Navbar
