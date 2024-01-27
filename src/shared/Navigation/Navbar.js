@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"
+import Logo from "../../utils/Images/logo.png"
 const Navbar = () => {
   return (
     <div className="nav-links-container">
     <div className="logo">
-        logo
+       <img src={Logo} alt='logo' height={"50px"}/>
       </div>
       <div className="page-links">
         <ul>

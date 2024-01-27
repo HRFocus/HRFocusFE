@@ -24,8 +24,16 @@
   }
   
   .logo {
-    padding: 1rem;
+    /* padding: 2px; */
     margin-left: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top : 5px;
+  }
+  .logo img{
+    margin-left: -0.78rem;
   }
   
   .users-link ul {
