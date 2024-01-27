@@ -1,0 +1,95 @@
+.support-container {
+    background-color: #eeba2b;
+    height: 100vh;
+    padding-bottom: 2rem;
+    overflow-x: scroll;
+}
+
+.support-heading {
+    padding: 5rem 0;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.support-logo {
+    background-color: black;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.support-logo img {
+    margin-left: -1.5rem;
+    margin-top: 0.3rem;
+}
+
+.support-heading h1 {
+    font-size: 50px;
+}
+
+.support-heading p {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.support-cards-container {
+    margin: 4rem 0rem;
+    display: flex;
+}
+
+.support-cards-container .cards {
+    background-color: #eeba2b;
+    border: 0.1px solid #e3a806;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+.icon-card {
+    border: 1px solid #e3a806;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto; 
+}
+.icon-card svg {
+    font-size: 1.5rem; 
+}
+.faq h1{
+    margin: 10rem 0rem 0rem;
+    text-align: center;
+}
+.questions{
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   flex-direction: column;
+   width: fit-content;
+}
+.questions summary{
+    margin: 0.5rem 0;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 37.5rem;
+}
+
+.questions p{
+    width: fit-content;
+    background-color: aliceblue;
+    padding: 1rem;
+    margin-top: -1rem;
+    border-radius: 0px 0px 10px 10px;
+}
