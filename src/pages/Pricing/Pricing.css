@@ -10,14 +10,14 @@
   }
   
   .pricing-intro > h1 {
-    color: white;
+    color: black;
     font-size: 70px;
     text-align: center;
   }
   
   .pricing-para {
     margin: 1rem 0rem;
-    color: white;
+    /* color: white; */
     font-size: larger;
     justify-content: center;
     text-align: center;
@@ -29,11 +29,15 @@
   }
   
   .pricing-buttons button {
-    background-color: white;
+    background-color: black;
+    color: aliceblue;
     border: none;
     font-weight: 600;
     padding: 7px 14px;
     margin: 0 5px; 
+  }
+  .pricing-buttons :nth-child(2){
+    color: black;
   }
   .pricing-buttons :nth-child(2){
     background-color: transparent;
