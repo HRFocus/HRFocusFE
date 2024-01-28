@@ -25,16 +25,6 @@ const Navbar = () => {
               Support
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/blogs" exact>
-              Blogs
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/services" exact>
-              Services
-            </NavLink>
-          </li>
         </ul>
       </div>
       <div className="users-link">
