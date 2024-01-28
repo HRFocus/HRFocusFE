@@ -55,3 +55,19 @@
   legend{
     font-weight: 250;
 }
+.login-form hr{
+  border: none;
+  border-top: 1px solid #ffffff;
+  color: white;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr::after {
+  background: #171710;
+  content: 'or';
+  padding: 0 6px;
+  position: relative;
+  top: -13px;
+}
