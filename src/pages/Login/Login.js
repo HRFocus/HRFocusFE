@@ -17,29 +17,33 @@ const Login = () => {
           <p>Let's get started!</p>
         </div>
         <form className="login-form">
-        <fieldset>
-          <legend>Email</legend>
-          <Input type="text" />
+          <fieldset>
+            <legend>Email</legend>
+            <Input type="text" backgroundColor="#171710" colot="white" />
           </fieldset>
           <fieldset>
-          <legend>Password</legend>
-          <Input type="password" />
+            <legend>Password</legend>
+            <Input type="password" backgroundColor="#171710" colot="white" />
           </fieldset>
 
           <Buttons
-          backgroundColor="#eeba2b"
-          width="100%"
-          height="3rem"
-          borderRadius="50px"
-          marginLeft="-0.1rem"
-          >Sign up</Buttons>
-        <Buttons
-          backgroundColor="white"
-          width="100%"
-          height="3rem"
-          borderRadius="50px"
-          marginLeft="-0.1rem"
-          >Continue with Google</Buttons>
+            backgroundColor="#eeba2b"
+            width="100%"
+            height="3rem"
+            borderRadius="50px"
+            marginLeft="-0.1rem"
+          >
+            Sign up
+          </Buttons>
+          <Buttons
+            backgroundColor="white"
+            width="100%"
+            height="3rem"
+            borderRadius="50px"
+            marginLeft="-0.1rem"
+          >
+            Continue with Google
+          </Buttons>
         </form>
       </div>
       <div className="image-section">
