@@ -1,15 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom/";
 import "./Login.css";
-import { useHistory } from 'react-router-dom';
 import loginImage from "../../utils/Images/loginPageImg.png";
 import logo from "../../utils/Images/logo.png";
 import Input from "../../shared/FormElements/Input/Input";
 import Buttons from "../../shared/FormElements/Buttons/Buttons";
 const Login = () => {
-  const history = useHistory();
-  const signUpButtonHandler = () =>{
-    history.push('/new')
-  };
   return (
     <div className="login-container">
       <div className="form-section">
@@ -40,17 +36,18 @@ const Login = () => {
           >
             Sign In
           </Buttons>
-          <hr/>
-          <Buttons
-            backgroundColor="white"
-            width="100%"
-            height="3rem"
-            borderRadius="50px"
-            marginLeft="-0.1rem"
-            onClick={signUpButtonHandler}
-          >
-            Sign Up
-          </Buttons>
+          <hr />
+          <Link to="/new">
+            <Buttons
+              backgroundColor="white"
+              width="100%"
+              height="3rem"
+              borderRadius="50px"
+              marginLeft="-0.1rem"
+            >
+              Sign Up
+            </Buttons>
+          </Link>
         </form>
       </div>
       <div className="image-section">
