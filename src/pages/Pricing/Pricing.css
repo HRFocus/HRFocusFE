@@ -1,13 +1,8 @@
 .price-page-container{
-    /* margin-top: 1.5rem; */
-    padding-top: 1rem;
+    padding-top: 4rem;
+    background: linear-gradient(to bottom, #eeba2b 60%, white 50%);
 }
-.price-page-upper-section {
-    background-color: #eeba2b;
-    height: 50vh;
-    padding: 2rem 5rem;
-    z-index: 0;
-  }
+
   
   .pricing-intro > h1 {
     color: black;
@@ -17,7 +12,6 @@
   
   .pricing-para {
     margin: 1rem 0rem;
-    /* color: white; */
     font-size: larger;
     justify-content: center;
     text-align: center;
@@ -46,6 +40,22 @@
   
   .price-cards-container {
     display: flex;
-    flex-wrap:wrap-reverse;
+    align-items:baseline;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
   }
- 
+@media only screen and (max-width: 767px){
+.price-page-container{
+  background: #eeba2b;
+}
+  .cards{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:0.5rem 0rem;
+  }
+  .pricing-intro{
+    padding: 0.5rem;
+  }
+}

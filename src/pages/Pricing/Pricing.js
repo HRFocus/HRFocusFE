@@ -14,7 +14,7 @@ const Pricing = () => {
 
   return (
     <div className="price-page-container">
-      <div className="price-page-upper-section">
+      
         <div className="pricing-intro">
           <h1>Convenient Pricing</h1>
           <p className="pricing-para">
@@ -27,7 +27,7 @@ const Pricing = () => {
             <button>Annually</button>
           </div>
         </div>
-      </div>
+      
       <div className="price-cards-container">
         <Cards>
           <div className="price">
