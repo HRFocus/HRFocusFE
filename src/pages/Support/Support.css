@@ -38,8 +38,10 @@
 }
 
 .support-cards-container {
-    margin: 4rem 0rem;
+    /* margin: 2rem 0rem; */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .support-cards-container .cards {
@@ -47,7 +49,9 @@
     border: 0.1px solid #e3a806;
     padding: 2rem;
     display: flex;
+    
     flex-direction: column; 
+    width: 16rem;
 }
 
 .icon-card {
@@ -66,7 +70,7 @@
     font-size: 1.5rem; 
 }
 .faq h1{
-    margin: 10rem 0rem 0rem;
+    margin: 7rem 0rem 0rem;
     text-align: center;
 }
 .questions{
@@ -92,4 +96,12 @@
     padding: 1rem;
     margin-top: -1rem;
     border-radius: 0px 0px 10px 10px;
+}
+@media only screen and (max-width:767px) {
+    .faq summary{
+       width: 90vw;
+    }
+        .questions p {
+            width: 90vw;
+        }
 }
