@@ -1,0 +1,18 @@
+* {
+   box-sizing: border-box;
+}
+button{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 17.1;
+    font-weight:400;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+    opacity: 0.8;
+}
