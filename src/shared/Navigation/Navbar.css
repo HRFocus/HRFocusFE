@@ -59,4 +59,22 @@
     padding: 5px 12px;
     border-radius: 5px;
   }
-  
+ @media (max-width: 767px) {
+   .nav-links-container {
+     flex-direction: column;
+     align-items: center;
+   }
+   .page-links{
+    translate: -15%;
+   }
+   .page-links ul,
+   .users-link ul {
+     margin-top: 1rem;
+   }
+
+   .page-links ul li,
+   .users-link ul li {
+     margin-right: 0;
+     margin-bottom: 0.5rem;
+   }
+ }
