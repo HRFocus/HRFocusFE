@@ -61,3 +61,13 @@
     color:aliceblue;
     font-weight: 900;
 }
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    .left-section {
+        display: none;
+    }
+
+    .right-section {
+        width: 100vw;
+    }
+
+}
