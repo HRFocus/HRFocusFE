@@ -74,9 +74,11 @@
   }
 
   .page-links ul {
+    margin-left: 0;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    translate: -15vw;
+    translate: -2vw;
   }
 
   .page-links ul li>a {
