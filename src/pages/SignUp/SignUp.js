@@ -45,6 +45,20 @@ const SignUp = () => {
           </fieldset>
           <Buttons>Sign Up</Buttons>
         </form>
+        <div className="or-signIn">
+          <hr />
+          <Link to="/new">
+            <Buttons
+              backgroundColor="black"
+              width="100%"
+              height="3rem"
+              borderRadius="10px"
+              marginLeft="-0.1rem"
+            >
+              Sign In
+            </Buttons>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import Login from "./pages/Login/Login";
 import Pricing from "./pages/Pricing/Pricing";
 import SignUp from "./pages/SignUp/SignUp";
 import Navbar from "./shared/Navigation/Navbar";
+import BottomNav from "./shared/Navigation/BottomNav";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           </Route>
             <Route path="/">
               <Navbar />
+              <BottomNav/>
               <Switch>
                 <Route path="/features" exact>
                   <Features />

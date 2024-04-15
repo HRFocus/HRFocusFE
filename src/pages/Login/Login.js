@@ -51,7 +51,7 @@ const Login = () => {
         </form>
       </div>
       <div className="image-section">
-        <img src={loginImage} alt={"login"} height={"75%"} />
+        <img src={loginImage} alt={"login"}  />
       </div>
     </div>
   );
