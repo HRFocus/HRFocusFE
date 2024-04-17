@@ -1,7 +1,7 @@
 import React from "react";
 import "./Support.css";
-import Cards from "../../shared/FormElements/Cards/Cards";
-import Logo from "../../utils/Images/logo.png";
+import Cards from "../../../shared/FormElements/Cards/Cards";
+import Logo from "../../../utils/Images/logo.png";
 import { HiChat } from "react-icons/hi";
 import { PiChatsCircle } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
