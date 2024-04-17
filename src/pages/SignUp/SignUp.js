@@ -47,7 +47,7 @@ const SignUp = () => {
         </form>
         <div className="or-signIn">
           <hr />
-          <Link to="/new">
+          <Link to="/login">
             <Buttons
               backgroundColor="black"
               width="100%"
