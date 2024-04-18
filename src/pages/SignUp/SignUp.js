@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 import "./SignUp.css";
 import logo from "../../utils/Images/logo.png";
 import Buttons from "../../shared/FormElements/Buttons/Buttons";
@@ -8,6 +9,12 @@ import signupImg from "../../utils/Images/signupimg.png";
 const SignUp = () => {
   return (
     <div className="signup-container">
+      <div className="back-to-home">
+        <Link to="/features">
+          <MdArrowBack />
+          Back to home
+        </Link>
+      </div>
       <div className="left-section">
         <div className="signup-logo">
           <img src={logo} alt={logo} height={"100%"} />
