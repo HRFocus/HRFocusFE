@@ -1,6 +1,6 @@
 import React from "react";
 import "./Features.css";
-import Buttons from "../../shared/FormElements/Buttons/Buttons";
+import Buttons from "../../../shared/FormElements/Buttons/Buttons";
 const Features = () => {
   return (
     <React.Fragment>

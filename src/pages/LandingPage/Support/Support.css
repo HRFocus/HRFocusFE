@@ -46,14 +46,11 @@
 
 .support-cards-container .cards {
     background-color: #eeba2b;
-    border: 0.1px solid #e3a806;
     padding: 2rem;
     display: flex;
-    
     flex-direction: column; 
     width: 16rem;
 }
-
 .icon-card {
     border: 1px solid #e3a806;
     width: fit-content;

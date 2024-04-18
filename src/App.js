@@ -5,10 +5,10 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
-import Features from "./pages/Features/Features";
-import Support from "./pages/Support/Support";
+import Features from "./pages/LandingPage/Features/Features";
+import Support from "./pages/LandingPage/Support/Support";
 import Login from "./pages/Login/Login";
-import Pricing from "./pages/Pricing/Pricing";
+import Pricing from "./pages/LandingPage/Pricing/Pricing";
 import SignUp from "./pages/SignUp/SignUp";
 import Navbar from "./shared/Navigation/Navbar";
 import BottomNav from "./shared/Navigation/BottomNav";

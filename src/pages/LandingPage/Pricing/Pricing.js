@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pricing.css";
-import Cards from "../../shared/FormElements/Cards/Cards";
+import Cards from "../../../shared/FormElements/Cards/Cards";
 
 const Pricing = () => {
   const listOfFeature = [
