@@ -12,6 +12,9 @@
     box-shadow: 3px 2px 15px 0px black;
     padding: 5% 2% 5%;
   }
+  .form-section a{
+    text-decoration: none;
+  }
   
   .image-section {
     display: flex;
@@ -73,19 +76,4 @@
   legend{
     font-weight: 250;
 }
-.login-form hr{
-  border: none;
-  border-top: 1px solid #ffffff;
-  color: white;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
-}
 
-.login-form hr::after {
-  background: #171710;
-  content: 'or';
-  padding: 0 6px;
-  position: relative;
-  top: -13px;
-}
