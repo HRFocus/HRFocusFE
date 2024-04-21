@@ -8,7 +8,20 @@
   margin-top: 0rem;
   z-index: 4;
 }
-
+.logo {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  margin-left: 3%;
+}
 .page-links ul {
   display: flex;
   justify-content: center;
@@ -25,18 +38,7 @@
   text-decoration: none;
 }
 
-.logo {
-  margin-left: 2rem;
-  background-color: black;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3.2rem;
-  margin-top: 5px;
-}
 
-.logo img {
-  margin-left: -0.78rem;
-}
 
 .users-link ul {
   display: flex;

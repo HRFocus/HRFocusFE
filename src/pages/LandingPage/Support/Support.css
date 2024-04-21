@@ -38,7 +38,7 @@
 }
 
 .support-cards-container {
-    z-index: -1;
+    /* margin: 2rem 0rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -48,9 +48,10 @@
     background-color: #eeba2b;
     padding: 2rem;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 16rem;
 }
+
 .icon-card {
     border: 1px solid #e3a806;
     width: fit-content;
@@ -61,61 +62,67 @@
 .card-desc {
     display: flex;
     flex-direction: column;
-    margin-top: auto; 
+    margin-top: auto;
 }
+
 .icon-card svg {
-    font-size: 1.5rem; 
-    
+    font-size: 1.5rem;
 }
-.faq{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:37vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-.faq h1{
+
+.faq h1 {
     margin: 7rem 0rem 0rem;
     text-align: center;
 }
-.questions{
-   flex-direction: column;
-    width:auto;
-    cursor: pointer;
+
+.questions {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    width: 37.5rem;
 }
-.questions summary{
+
+.questions summary {
     margin: 0.5rem 0;
     padding: 3px;
     background-color: black;
     color: white;
     padding: 1rem;
     border-radius: 10px;
-    width: auto;
+    width: 37.5rem;
 }
 
-.questions p{
+.questions p {
     width: fit-content;
     background-color: aliceblue;
     padding: 1rem;
     margin-top: -1rem;
     border-radius: 0px 0px 10px 10px;
 }
+
 @media only screen and (max-width:767px) {
-    .support-logo{
+    .support-logo {
         display: none;
     }
-    .support-container{
+
+    .support-container {
         padding-top: 3rem;
     }
-    .faq summary{
-       width: 90vw;
-       
+
+    .faq summary {
+        width: 90vw;
+
     }
-    .faq{
+
+    .faq {
         margin-bottom: 4rem;
     }
-        .questions p {
-            width: 90vw;
-        }
+
+    .questions {
+        width: fit-content;
+    }
+
+    .questions p {
+        width: 90vw;
+    }
 }
