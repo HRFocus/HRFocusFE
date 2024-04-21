@@ -1,5 +1,5 @@
 .signup-container {
-    height: 100vh;
+    height: 100%;
     display: flex;
 }
 
@@ -28,17 +28,21 @@
 }
 
 .left-section {
+    box-sizing: border-box;
     background-color: #eeba2b;
     height: 100vh;
     width: 40%;
-    padding: 4rem
+    overflow: hidden;
 }
 
 .signup-logo {
     background-color: black;
     border-radius: 50%;
     height: 80px;
-    width: 80px
+    width: 80px;
+    margin-top: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .signup-logo img {
