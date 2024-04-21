@@ -29,7 +29,9 @@ const SignUp = () => {
             </Link>
           </div>
         </div>
-        <img src={signupImg} alt="singupImg" height={"50%"} />
+        <div className="exrta-image">
+          <img src={signupImg} alt="singupImg" height={"40%"} />
+        </div>
       </div>
       <div className="right-section">
         <h1>Create Account</h1>

@@ -43,18 +43,7 @@ const Login = () => {
           >
             Sign In
           </Buttons>
-          <hr />
-          <Link to="/new">
-            <Buttons
-              backgroundColor="white"
-              width="100%"
-              height="3rem"
-              borderRadius="50px"
-              marginLeft="-0.1rem"
-            >
-              Sign Up
-            </Buttons>
-          </Link>
+          Don't have any Account? <Link to='/new'>Create one</Link>
         </form>
       </div>
       <div className="image-section">
