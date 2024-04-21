@@ -14,7 +14,6 @@ import Navbar from "./shared/Navigation/Navbar";
 import BottomNav from "./shared/Navigation/BottomNav";
 
 function App() {
-
   return (
     <div className="App">
       <main>
@@ -24,11 +23,11 @@ function App() {
               <Login />
             </Route>
             <Route path="/new" exact>
-            <SignUp />
-          </Route>
+              <SignUp />
+            </Route>
             <Route path="/">
               <Navbar />
-              <BottomNav/>
+              <BottomNav />
               <Switch>
                 <Route path="/features" exact>
                   <Features />

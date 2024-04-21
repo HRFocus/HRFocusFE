@@ -38,7 +38,7 @@
 }
 
 .support-cards-container {
-    /* margin: 2rem 0rem; */
+    z-index: -1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -65,17 +65,24 @@
 }
 .icon-card svg {
     font-size: 1.5rem; 
+    
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:37vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 .faq h1{
     margin: 7rem 0rem 0rem;
     text-align: center;
 }
 .questions{
-   display: flex;
-   margin-left: auto;
-   margin-right: auto;
    flex-direction: column;
-   width: fit-content;
+    width:auto;
+    cursor: pointer;
 }
 .questions summary{
     margin: 0.5rem 0;
@@ -84,7 +91,7 @@
     color: white;
     padding: 1rem;
     border-radius: 10px;
-    width: 37.5rem;
+    width: auto;
 }
 
 .questions p{

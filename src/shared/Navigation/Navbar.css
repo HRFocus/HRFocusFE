@@ -6,6 +6,7 @@
   width: 100%;
   height: auto;
   margin-top: 0rem;
+  z-index: 4;
 }
 
 .page-links ul {
