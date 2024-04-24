@@ -14,6 +14,9 @@ import Navbar from "./shared/Navigation/Navbar";
 import BottomNav from "./shared/Navigation/BottomNav";
 import Home from "./pages/UserPages/Home/Home";
 import SideNav from "./shared/Navigation/SideNav/SideNav";
+import TimeTracker from "./pages/UserPages/TimeTracker/TimeTracker";
+import Organisation from "./pages/UserPages/OrgTree/Organisation";
+import LeaveTracker from "./pages/UserPages/LeaveTracker/LeaveTracker";
 
 function App() {
   return (
@@ -29,12 +32,22 @@ function App() {
             </Route>
             <Route path="/user">
               {/* Any navbar */}
-              <SideNav/>
+              <SideNav />
               <Switch>
                 <Route path="/user/home">
-                <Home/>  
+                  <Home />
+                </Route>
+                <Route path="/user/time-tracker">
+                  <TimeTracker />
+                </Route>
+                <Route path="/user/leave-tracker">
+                  <LeaveTracker />
+                </Route>
+                <Route path="/user/org">
+                  <Organisation />
                 </Route>
               </Switch>
+              <Redirect to="/user/home" />
             </Route>
             <Route path="/">
               <Navbar />
