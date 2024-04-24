@@ -16,7 +16,9 @@
     text-decoration: none;
     color: #eeba2b;
   }
-  
+  .form-section button{
+    margin-bottom: 10px;
+  }
   .image-section {
     display: flex;
     justify-content: center;
@@ -43,6 +45,9 @@
     }
 
   @media only screen and (max-width: 768px) {
+    .form-section{
+      padding-top: 15%;
+    }
       .image-section{
         display: none;
       }

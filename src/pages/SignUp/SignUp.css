@@ -113,8 +113,11 @@
     .left-section {
         display: none;
     }
-
+    .right-section h1{
+        font-size: 40px;
+    }
     .right-section {
+        padding-top: 15%;
         width: 100vw;
     }
 
