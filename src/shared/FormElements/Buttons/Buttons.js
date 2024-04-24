@@ -14,6 +14,7 @@ const Buttons = (props) => {
         borderRadius: props.borderRadius,
         marginLeft:props.marginLeft
       }}
+      type={props.type}
       >{props.children}</button>
     </React.Fragment>
   )

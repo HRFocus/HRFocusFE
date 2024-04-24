@@ -12,6 +12,7 @@ import Pricing from "./pages/LandingPage/Pricing/Pricing";
 import SignUp from "./pages/SignUp/SignUp";
 import Navbar from "./shared/Navigation/Navbar";
 import BottomNav from "./shared/Navigation/BottomNav";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
@@ -19,11 +20,19 @@ function App() {
       <main>
         <Router>
           <Switch>
-            <Route path="/login">
+            <Route path="/login" exact>
               <Login />
             </Route>
             <Route path="/new" exact>
               <SignUp />
+            </Route>
+            <Route path="/user">
+              {/* Any navbar */}
+              <Switch>
+                <Route path="/user/home">
+                <Home/>  
+                </Route>
+              </Switch>
             </Route>
             <Route path="/">
               <Navbar />
