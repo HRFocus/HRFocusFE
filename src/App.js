@@ -12,7 +12,8 @@ import Pricing from "./pages/LandingPage/Pricing/Pricing";
 import SignUp from "./pages/SignUp/SignUp";
 import Navbar from "./shared/Navigation/Navbar";
 import BottomNav from "./shared/Navigation/BottomNav";
-import Home from "./pages/Home/Home";
+import Home from "./pages/UserPages/Home/Home";
+import SideNav from "./shared/Navigation/SideNav/SideNav";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             </Route>
             <Route path="/user">
               {/* Any navbar */}
+              <SideNav/>
               <Switch>
                 <Route path="/user/home">
                 <Home/>  
