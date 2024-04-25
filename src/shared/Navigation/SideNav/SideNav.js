@@ -1,6 +1,5 @@
 import React from 'react'
 import "./SideNav.css"
-import { Link } from "react-router-dom";
 import { MdHome } from 'react-icons/md';
 import { MdTimer } from 'react-icons/md';
 import { MdCalendarMonth } from 'react-icons/md';
@@ -11,13 +10,13 @@ const SideNav = () => {
     <aside className="side-nav-container">
       <ul>
         <li>
-          <NavLink to="/user/home"activeClassName="active-link">
+          <NavLink to="/user/home" activeClassName="active-link">
             <MdHome />
             <span className="link-text">Home</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/user/time-tracker"activeClassName="active-link">
+          <NavLink to="/user/time-tracker" activeClassName="active-link">
             <MdTimer />
             <span className="link-text">Time Tracker</span>
           </NavLink>
@@ -31,7 +30,7 @@ const SideNav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/user/org"activeClassName="active-link">
+          <NavLink to="/user/org" activeClassName="active-link">
             <MdHomeWork />
             <span className="link-text">
             Organisation
