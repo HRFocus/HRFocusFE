@@ -1,46 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Home.css";
 import Cards from "../../../shared/FormElements/Cards/Cards";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const services = [
-      {
-        name: "Time Tracker",
-        path: "/user/time-tracker",
-        imgPath: "",
-      },
-      {
-        name: "Leave Tracker",
-        path: "/user/leave-tracker",
-        imgPath: "",
-      },
-      {
-        name: "Organisation",
-        path: "/user/org",
-        imgPath: "",
-      },
-      {
-        name: "Files",
-        path: "/org",
-        imgPath: "",
-      },
-      {
-        name: "Performance",
-        path: "/performance",
-        imgPath: "",
-      },
-      {
-        name: "Assets",
-        path: "/assets",
-        imgPath: "",
-      },
-      {
-        name: "Exit Process",
-        path: "/exit-process",
-        imgPath: "",
-      },
-    ];
+  const services = useSelector((state) => state.services);
 
   return (
     <div className="home-page-container">

@@ -49,3 +49,6 @@
 .link-text {
     font-size: 13px;
 }
+.disable{
+    display: none;
+}
