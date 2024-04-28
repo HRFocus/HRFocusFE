@@ -16,6 +16,7 @@
      color: black;
      font-size: small;
      text-align:justify;
+     padding: 0;
     }
     .home-page-container li {
     margin: .5rem;

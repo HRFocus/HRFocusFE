@@ -7,13 +7,19 @@ import Input from "../../shared/FormElements/Input/Input";
 import { MdArrowBack } from "react-icons/md";
 import Buttons from "../../shared/FormElements/Buttons/Buttons";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { userLogIn } from "../../app/slice";
+
 const Login = () => {
+  const dispatch = useDispatch();
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const handleUserSignIn = () => {
+  const handleUserSignIn = (event) => {
+    event.preventDefault();
     if (email.trim() !== "" && password.trim() !== "") {
       history.push('/user/home')
+      dispatch(userLogIn())
     } else {
       alert("Please Enter user name and password")
     }
