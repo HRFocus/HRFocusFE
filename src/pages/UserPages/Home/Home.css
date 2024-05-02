@@ -1,0 +1,26 @@
+.home-page-container{
+    padding: 3rem 7rem;
+}
+.home-page-container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .home-page-container a {
+     width: max-content;
+     text-decoration: none;
+     color: black;
+     font-size: small;
+     text-align:justify;
+     padding: 0;
+    }
+    .home-page-container li {
+    margin: .5rem;
+    }
+.icons{
+    width: 100px;
+}
