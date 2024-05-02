@@ -18,9 +18,11 @@ import SideNav from "./shared/Navigation/SideNav/SideNav";
 import TimeTracker from "./pages/UserPages/TimeTracker/TimeTracker";
 import Organisation from "./pages/UserPages/OrgTree/Organisation";
 import LeaveTracker from "./pages/UserPages/LeaveTracker/LeaveTracker";
+import TopNav from "./shared/Navigation/TopNav/TopNav";
 function App() {
-  const userLogInstate = useSelector((state) => state.userLoggedIn);
+  let userLogInstate = useSelector((state) => state.userLoggedIn);
   console.log("user logged in status", userLogInstate);
+ 
   return (
     <div className="App">
       <main>
@@ -32,9 +34,9 @@ function App() {
             <Route path="/new" exact>
               <SignUp />
             </Route>
-            {userLogInstate &&
+            {userLogInstate && (
               <Route path="/user">
-                {/* Any navbar */}
+                <TopNav />
                 <SideNav />
                 <Switch>
                   <Route path="/user/home">
@@ -52,7 +54,7 @@ function App() {
                 </Switch>
                 <Redirect to="/user/home" />
               </Route>
-            }
+            )}
             {!userLogInstate ? (
               <Route path="/">
                 <Navbar />

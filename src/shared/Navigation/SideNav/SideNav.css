@@ -6,6 +6,7 @@
     color: white;
     box-shadow: 3px 3px 5px black;
     align-items: center;
+    padding-top: 4rem;
 }
 
 .side-nav-container ul {
