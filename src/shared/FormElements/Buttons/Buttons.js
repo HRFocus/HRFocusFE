@@ -14,7 +14,8 @@ const Buttons = (props) => {
         borderRadius: props.borderRadius,
         marginLeft:props.marginLeft
       }}
-      type={props.type}
+        type={props.type}
+        onClick={props.handleClick}
       >{props.children}</button>
     </React.Fragment>
   )

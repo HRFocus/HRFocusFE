@@ -17,8 +17,12 @@ import Home from "./pages/UserPages/Home/Home";
 import SideNav from "./shared/Navigation/SideNav/SideNav";
 import TimeTracker from "./pages/UserPages/TimeTracker/TimeTracker";
 import Organisation from "./pages/UserPages/OrgTree/Organisation";
+import Files from "./pages/UserPages/Files/Files";
 import LeaveTracker from "./pages/UserPages/LeaveTracker/LeaveTracker";
 import TopNav from "./shared/Navigation/TopNav/TopNav";
+import Perfomance from "./pages/UserPages/Performance/Perfomance";
+import ExitProcess from "./pages/UserPages/ExitProcess/ExitProcess";
+import Assets from "./pages/UserPages/Assets/Assets";
 function App() {
   let userLogInstate = useSelector((state) => state.userLoggedIn);
   console.log("user logged in status", userLogInstate);
@@ -50,6 +54,18 @@ function App() {
                   </Route>
                   <Route path="/user/org">
                     <Organisation />
+                  </Route>
+                  <Route path="/user/performance">
+                    <Perfomance/>
+                  </Route>
+                 <Route path="/user/files">
+                    <Files/>
+                  </Route>
+                 <Route path="/user/exit-process">
+                    <ExitProcess/>
+                  </Route>
+                 <Route path="/user/assets">
+                    <Assets/>
                   </Route>
                 </Switch>
                 <Redirect to="/user/home" />

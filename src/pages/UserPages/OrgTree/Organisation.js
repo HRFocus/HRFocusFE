@@ -2,7 +2,7 @@ import React from 'react'
 import "./Organisation.css"
 const Organisation = () => {
   return (
-    <div>
+    <div className='org-container'>
       <h1>Organisation</h1>
     </div>
   )

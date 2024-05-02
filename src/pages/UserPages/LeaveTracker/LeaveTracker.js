@@ -2,7 +2,7 @@ import React from 'react'
 import './LeaveTracker.css'
 const LeaveTracker = () => {
   return (
-    <div>
+    <div className='lt-container'>
       <h1>LeaveTracker</h1>
     </div>
   )

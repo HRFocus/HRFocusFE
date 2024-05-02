@@ -58,20 +58,27 @@ const initialState = {
 
 
 const handleUserLogIn = (state, action) => {
-    let negateLoggedInStatus = !state.userLoggedIn;
-    state.userLoggedIn = negateLoggedInStatus;
-    localStorage.setItem("isUserLoggedIn", negateLoggedInStatus);
-    console.log("User has Logged", state.userLoggedIn? "In" : "Out" );
+    
+    state.userLoggedIn = true;
+    localStorage.setItem("isUserLoggedIn", true);
+    console.log("User has Logged In");
 }
+const handleUserLogOut = (state, action) => {
+  localStorage.removeItem("isUserLoggedIn");
+  state.userLoggedIn = false;
+  localStorage.setItem("isUserLoggedIn", false);
+  console.log("User has Logged OUT");
+};
 
 
 export const slice = createSlice({
     name: "logIn",
     initialState,
     reducers: {
-        userLogIn: handleUserLogIn,
+      userLogIn: handleUserLogIn,
+      userLogOut:handleUserLogOut
     }
 })
 
-export const { userLogIn } = slice.actions;
+export const { userLogIn, userLogOut } = slice.actions;
 export default slice.reducer;
