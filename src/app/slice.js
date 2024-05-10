@@ -27,7 +27,7 @@ const initialState = {
     {
       name: "Files",
       path: "/user/files",
-      icons: "",
+      icons: "📄",
       imgPath:
         "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
       enabled: true,
@@ -36,21 +36,21 @@ const initialState = {
       name: "Performance",
       path: "/user/performance",
       imgPath: "",
-      icons: "",
+      icons: "🏆",
       enabled: true,
     },
     {
       name: "Assets",
       path: "/user/assets",
       imgPath: "",
-      icons: "",
+      icons: "💻📱",
       enabled: true,
     },
     {
       name: "Exit Process",
       path: "/user/exit-process",
       imgPath: "",
-      icons: "",
+      icons: "🧑🏻‍💼",
       enabled: false,
     },
   ],
@@ -58,65 +58,64 @@ const initialState = {
     {
       name: "Independence day",
       date: "15 - Aug",
-      type:"Mandatory",
-      day: "Tuesday"
+      type: "Mandatory",
+      day: "Tuesday",
     },
-  {
+    {
       name: "Gandhi Jayanthi",
       date: "02 - Oct",
-      type:"Mandatory",
-      day: "Friday"
+      type: "Mandatory",
+      day: "Friday",
     },
-  {
+    {
       name: "Republic day",
       date: "24 - Jan",
-      type:"Mandatory",
-      day: "Monday"
+      type: "Mandatory",
+      day: "Monday",
     },
-  {
+    {
       name: "Kannada Rajyothsava",
       date: "01 - November",
-      type:"Mandatory",
-      day: "Wednesday"
+      type: "Mandatory",
+      day: "Wednesday",
     },
-  {
+    {
       name: "May day",
       date: "01 - May",
-      type:"Mandatory",
-      day: "Wednesday"
+      type: "Mandatory",
+      day: "Wednesday",
     },
-  {
+    {
       name: "Any day",
       date: "15 - Jun",
-      type:"Optional",
-      day: "Wednesday"
+      type: "Optional",
+      day: "Wednesday",
     },
-  {
+    {
       name: "Today",
       date: "1 - Aug",
-      type:"Optional",
-      day: "Tuesday"
+      type: "Optional",
+      day: "Tuesday",
     },
-  {
+    {
       name: "Today",
       date: "1 - Aug",
-      type:"",
-      day: "Tuesday"
+      type: "",
+      day: "Tuesday",
     },
-  {
+    {
       name: "Today",
       date: "1 - Aug",
-      type:"Optional",
-      day: "Tuesday"
+      type: "Optional",
+      day: "Tuesday",
     },
-  {
+    {
       name: "Today",
       date: "1 - Aug",
-      type:"Regional",
-      day: "Tuesday"
+      type: "Regional",
+      day: "Tuesday",
     },
   ],
-
 };
 
 
