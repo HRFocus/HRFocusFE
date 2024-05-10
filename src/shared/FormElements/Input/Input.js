@@ -10,7 +10,9 @@ const Input = (props) => {
         color: props.color,
         border: props.border,
         borderRadius: props.borderRadius,
-        padding:props.padding
+        padding: props.padding,
+        fontSize: props.fontSize,
+        width:props.width
       }}
       onChange={(e) => {
         props.setValue(e.target.value);
