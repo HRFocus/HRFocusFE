@@ -5,6 +5,7 @@ import Buttons from "../../FormElements/Buttons/Buttons";
 import { useDispatch } from "react-redux";
 import { userLogOut } from "../../../app/slice";
 import { useHistory } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import logoSrc from "../../../utils/Images/logo.png"
 const TopNav = () => {
     const dispatch = useDispatch();
@@ -23,16 +24,20 @@ const TopNav = () => {
       <div>
         <Input
           type="text"
-          color="rgb(140, 137, 137)"
-          border="1px solid rgb(215, 214, 214)"
+          color="black"
+          border="0.5px solid black"
           borderRadius="5px"
           padding="8px 15px"
           placeholder="Search..."
+          backgroundColor="transparent"
+          fontSize="80%"
+          width="20vw"
           setValue={setSearchText}
         />
       </div>
-      <div>
-        <Buttons handleClick={handleSignOutButton}>Sign Out</Buttons>
+      <div className="user-mgmt">
+        <Buttons handleClick={handleSignOutButton} backgroundColor="transparent" height="5vh" width="90px">Sign Out</Buttons>
+        <div className="profile-container"> <AccountCircleIcon fontSize="large"/> </div>
       </div>
     </div>
   );

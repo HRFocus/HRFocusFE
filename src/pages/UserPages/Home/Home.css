@@ -1,7 +1,8 @@
-.home-page-container{
+.home-page-container {
     padding: 5rem 7rem;
 }
-.home-page-container ul{
+
+.services-container ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -10,17 +11,56 @@
     justify-content: center;
 }
 
- .home-page-container a {
-     width: max-content;
-     text-decoration: none;
-     color: black;
-     font-size: small;
-     text-align:justify;
-     padding: 0;
-    }
-    .home-page-container li {
+.home-page-container a {
+    width: max-content;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    text-align: justify;
+    padding: 0;
+}
+
+.home-page-container li {
     margin: .5rem;
-    }
-.icons{
+}
+
+.icons {
     width: 100px;
+}
+
+.annual-leaves-container {
+    /* border: .5px solid grey; */
+    min-width: 250px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 10px;
+    margin: 2rem;
+    background-color: rgb(246, 246, 246);
+}
+
+.div-sep {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.annual-leaves-container h3 {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.leave-lists {
+    list-style: none;
+    padding: 0;
+    overflow: scroll;
+    height: 40vh;
+}
+
+.leave-lists hr {
+    margin: 1.5px 0 0 0;
 }
