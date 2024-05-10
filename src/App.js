@@ -67,8 +67,8 @@ function App() {
                  <Route path="/user/assets">
                     <Assets/>
                   </Route>
+                  <Redirect to="/user/home" />
                 </Switch>
-                <Redirect to="/user/home" />
               </Route>
             )}
             {!userLogInstate ? (
@@ -89,7 +89,7 @@ function App() {
                 </Switch>
               </Route>
             ) : (
-              <Redirect to="/user/home" />
+              <Redirect to="/login" />
             )}
           </Switch>
         </Router>

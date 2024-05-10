@@ -36,7 +36,7 @@ const TopNav = () => {
         />
       </div>
       <div className="user-mgmt">
-        <Buttons handleClick={handleSignOutButton} backgroundColor="transparent" height="5vh" width="90px">Sign Out</Buttons>
+        <Buttons handleClick={handleSignOutButton} className="sign-out" backgroundColor="transparent" height="5vh" width="90px">Sign Out</Buttons>
         <div className="profile-container"> <AccountCircleIcon fontSize="large"/> </div>
       </div>
     </div>
