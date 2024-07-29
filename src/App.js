@@ -20,13 +20,70 @@ import Organisation from "./pages/UserPages/OrgTree/Organisation";
 import Files from "./pages/UserPages/Files/Files";
 import LeaveTracker from "./pages/UserPages/LeaveTracker/LeaveTracker";
 import TopNav from "./shared/Navigation/TopNav/TopNav";
-import Perfomance from "./pages/UserPages/Performance/Perfomance";
+import Performance from "../src/pages/UserPages/Performance/Perfomance";
 import ExitProcess from "./pages/UserPages/ExitProcess/ExitProcess";
 import Assets from "./pages/UserPages/Assets/Assets";
+
 function App() {
   let userLogInstate = useSelector((state) => state.userLoggedIn);
   console.log("user logged in status", userLogInstate);
- 
+
+  let routes;
+  if (userLogInstate) {
+    routes = (
+      <React.Fragment>
+        <TopNav />
+        <SideNav />
+        <Switch>
+          <Route path="/user/home" exact>
+            <Home />
+          </Route>
+          <Route path="/user/time-tracker" exact>
+            <TimeTracker />
+          </Route>
+          <Route path="/user/leave-tracker" exact>
+            <LeaveTracker />
+          </Route>
+          <Route path="/user/org" exact>
+            <Organisation />
+          </Route>
+          <Route path="/user/performance" exact>
+            <Performance />
+          </Route>
+          <Route path="/user/files" exact>
+            <Files />
+          </Route>
+          <Route path="/user/exit-process" exact>
+            <ExitProcess />
+          </Route>
+          <Route path="/user/assets" exact>
+            <Assets />
+          </Route>
+          <Redirect to="/user/home" />
+        </Switch>
+      </React.Fragment>
+    );
+  } else {
+    routes = (
+      <React.Fragment>
+        <Navbar />
+        <BottomNav />
+        <Switch>
+          <Route path="/features" exact>
+            <Features />
+          </Route>
+          <Route path="/support" exact>
+            <Support />
+          </Route>
+          <Route path="/pricing" exact>
+            <Pricing />
+          </Route>
+          <Redirect to="/features" />
+        </Switch>
+      </React.Fragment>
+    );
+  }
+
   return (
     <div className="App">
       <main>
@@ -38,59 +95,7 @@ function App() {
             <Route path="/new" exact>
               <SignUp />
             </Route>
-            {userLogInstate && (
-              <Route path="/user">
-                <TopNav />
-                <SideNav />
-                <Switch>
-                  <Route path="/user/home">
-                    <Home />
-                  </Route>
-                  <Route path="/user/time-tracker">
-                    <TimeTracker />
-                  </Route>
-                  <Route path="/user/leave-tracker">
-                    <LeaveTracker />
-                  </Route>
-                  <Route path="/user/org">
-                    <Organisation />
-                  </Route>
-                  <Route path="/user/performance">
-                    <Perfomance/>
-                  </Route>
-                 <Route path="/user/files">
-                    <Files/>
-                  </Route>
-                 <Route path="/user/exit-process">
-                    <ExitProcess/>
-                  </Route>
-                 <Route path="/user/assets">
-                    <Assets/>
-                  </Route>
-                  <Redirect to="/user/home" />
-                </Switch>
-              </Route>
-            )}
-            {!userLogInstate ? (
-              <Route path="/">
-                <Navbar />
-                <BottomNav />
-                <Switch>
-                  <Route path="/features" exact>
-                    <Features />
-                  </Route>
-                  <Route path="/support" exact>
-                    <Support />
-                  </Route>
-                  <Route path="/pricing" exact>
-                    <Pricing />
-                  </Route>
-                  <Redirect to="/features" />
-                </Switch>
-              </Route>
-            ) : (
-              <Redirect to="/login" />
-            )}
+            {routes}
           </Switch>
         </Router>
       </main>

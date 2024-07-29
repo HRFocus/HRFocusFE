@@ -118,7 +118,9 @@ const initialState = {
   ],
 };
 
-
+// const isUserLoggedIn = () => {
+  
+// }
 const handleUserLogIn = (state, action) => {
     
     state.userLoggedIn = true;
